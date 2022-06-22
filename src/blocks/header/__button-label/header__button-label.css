@@ -1,0 +1,39 @@
+.header__button-label {
+  display: none;
+  grid-column: 2 / 3;
+  grid-row: 2/ 3;
+  margin: auto 0 auto auto;
+}
+
+@media (max-width: 500px) {
+  .header__button-label {
+    pointer-events: all;
+    padding-left: 16px;
+    z-index: 2;
+    width: 24px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 910px) {
+  .header__button-label {
+    margin-right: 30px;
+  }
+}
+
+.header__button-label::before {
+  content: "";
+  display: block;
+  width: 24px;
+  height: 24px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(../../../images/burger.svg);
+}
+
+.header__button-label:hover::before {
+  opacity: 0.8;
+  transition: background-image 0.3s;
+}

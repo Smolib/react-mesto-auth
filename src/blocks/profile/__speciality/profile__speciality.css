@@ -1,0 +1,24 @@
+.profile__speciality {
+  color: #fff;
+  margin: 0;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: calc(1em + 3px);
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  grid-area: speciality;
+}
+
+@media screen and (max-width: 600px) {
+  .profile__speciality {
+    font-size: 4.375vw;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .profile__speciality {
+    font-size: 14px;
+  }
+}

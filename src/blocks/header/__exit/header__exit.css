@@ -1,0 +1,10 @@
+.header__exit {
+  font-size: 18px;
+  line-height: 22px;
+  color: #a9a9a9;
+  cursor: pointer;
+}
+
+.header__exit:hover {
+    opacity: 0.6;
+}

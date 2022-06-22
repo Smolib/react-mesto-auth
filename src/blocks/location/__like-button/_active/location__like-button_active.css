@@ -1,0 +1,4 @@
+.location__like-button_active.location__like-button::before {
+  content: '';
+  background-image: url(../../../../images/heart_active.svg);
+}

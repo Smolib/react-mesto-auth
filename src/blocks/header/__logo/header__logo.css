@@ -1,0 +1,24 @@
+.header__logo {
+  max-width: 142px;
+  width: 32.41875vw;
+  min-width: 103.74px;
+  max-height: 33px;
+  height: 7.625vw;
+  min-height: 24.4px;
+  margin: 45px auto 41px 0;
+  background-image: url(../../../images/header__logo.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  grid-row: 1 / 2;
+}
+
+@media screen and (max-width: 910px) {
+  .header__logo {
+    margin: 28px auto 31.6px 27px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .header__logo {
+    grid-row: 2 / 3;
+  }
+}

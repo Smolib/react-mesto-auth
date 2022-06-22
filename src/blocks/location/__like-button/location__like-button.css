@@ -1,0 +1,26 @@
+.location__like-button {
+  width: 22px;
+  height: 19px;
+  background: transparent;
+  border: 0;
+  position: relative;
+  cursor: pointer;
+}
+
+.location__like-button::before {
+  content: '';
+  background-image: url(../../../images/heart.svg);
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  height: 19px;
+  width: 22px;
+}
+
+.location__like-button:hover.location__like-button::before {
+  opacity: 0.5;
+}

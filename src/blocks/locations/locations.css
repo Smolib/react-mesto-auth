@@ -1,0 +1,14 @@
+.locations {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 52px;
+  flex-wrap: wrap;
+  gap: 21px 17px;
+}
+
+@media screen and (max-width: 600px) {
+  .locations {
+    margin-top: 36px;
+  }
+}

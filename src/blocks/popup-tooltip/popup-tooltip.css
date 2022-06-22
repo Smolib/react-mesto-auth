@@ -1,0 +1,21 @@
+.popup-tooltip {
+  width: 430px;
+  height: 330px;
+  background-color: #fff;
+  padding: 60px 36px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  margin: 0 20px;
+}
+
+@media screen and (max-width: 700px) {
+  .popup-tooltip {
+    width: 280px;
+    height: 308px;
+    padding: 50px 18px;
+  }
+}

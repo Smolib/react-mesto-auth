@@ -1,0 +1,9 @@
+.auth__submit-button_active {
+  background-color: #fff;
+  color: #000;
+  cursor: pointer;
+}
+
+.auth__submit-button_active:hover {
+  opacity: 0.85;
+}

@@ -1,0 +1,20 @@
+.header__button{
+    display: none;
+    position: absolute;
+  }
+  
+  .header__button:checked ~ .header__profile {
+    display: flex;
+  }
+  
+  .header__button:checked ~ .header__button-label::before {
+    background-image: url(../../../images/close.svg);
+    width: 20px;
+    height: 20px;
+  }
+  
+  .header__button:checked ~ .header__button-label:hover::before {
+      opacity: 0.8;
+    transition: background-image 0.3s;
+  }
+  

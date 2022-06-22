@@ -1,0 +1,29 @@
+.popup-form__text-form {
+  padding: 13px 0;
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  color: #000;
+  font-size: 14px;
+  line-height: 1.21;
+  font-weight: 400;
+  padding-left: 2px;
+}
+
+.popup-form__text-form::placeholder {
+  color: #000;
+  font-size: 14px;
+  line-height: 1.21;
+  font-weight: 400;
+  padding-left: 2px;
+  opacity: 0.6;
+}
+
+.popup-form__text-form:first-of-type {
+  margin-top: 54px;
+}
+
+@media screen and (max-width: 700px) {
+  .popup-form__text-form:first-of-type {
+    margin-top: 50px;
+  }
+}
