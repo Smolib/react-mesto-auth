@@ -52,18 +52,20 @@ function App() {
   }, []);
 
   useEffect(() => {
-    Promise.all([api.getUserInfo(), api.getInitialCards()])
-      .then(([user, cards]) => {
-        setCurrentUser(user);
-        setCards(cards);
-      })
-      .catch((err) => {
-        alert(
-          "Ой! Что-то пошло не так! Mesto сломался и мы не смогли подгрузить данные пользователя и карточки, простите нас! :("
-        );
-        setCurrentUser({ name: "ой,", about: "что-то сломалось" });
-      });
-  }, []);
+    if (loggedIn) {
+      Promise.all([api.getUserInfo(), api.getInitialCards()])
+        .then(([user, cards]) => {
+          setCurrentUser(user);
+          setCards(cards);
+        })
+        .catch((err) => {
+          alert(
+            "Ой! Что-то пошло не так! Mesto сломался и мы не смогли подгрузить данные пользователя и карточки, простите нас! :("
+          );
+          setCurrentUser({ name: "ой,", about: "что-то сломалось" });
+        });
+    }
+  }, [loggedIn]);
 
   function onSignOut() {
     setLoggedIn(false);
